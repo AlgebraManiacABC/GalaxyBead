@@ -1,0 +1,12 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory `c:/Users/Blue Elk 8/Documents/GalaxyBead'
+mkdir build
+gcc -c src/bead.c -o build/bead.o -Wall -Werror -lm -std=c17 -IC:\SDL2_all\include -LC:\SDL2_all\lib -lmingw32 -llibSDL2_image  -lSDL2main -lSDL2 -lSDL2_ttf
+gcc -c src/files.c -o build/files.o -Wall -Werror -lm -std=c17 -IC:\SDL2_all\include -LC:\SDL2_all\lib -lmingw32 -llibSDL2_image  -lSDL2main -lSDL2 -lSDL2_ttf
+gcc -c src/main.c -o build/main.o -Wall -Werror -lm -std=c17 -IC:\SDL2_all\include -LC:\SDL2_all\lib -lmingw32 -llibSDL2_image  -lSDL2main -lSDL2 -lSDL2_ttf
+gcc -c src/mysdl.c -o build/mysdl.o -Wall -Werror -lm -std=c17 -IC:\SDL2_all\include -LC:\SDL2_all\lib -lmingw32 -llibSDL2_image  -lSDL2main -lSDL2 -lSDL2_ttf
+ 
+gcc -c src/myttf.c -o build/myttf.o -Wall -Werror -lm -std=c17 -IC:\SDL2_all\include -LC:\SDL2_all\lib -lmingw32 -llibSDL2_image  -lSDL2main -lSDL2 -lSDL2_ttf
+gcc build/bead.o build/files.o build/main.o build/mysdl.o build/myttf.o -o bin/galaxybead.exe -Wall -Werror -lm -std=c17 -IC:\SDL2_all\include -LC:\SDL2_all\lib -lmingw32 -llibSDL2_image  -lSDL2main -lSDL2 -lSDL2_ttf
+make.exe: Leaving directory `c:/Users/Blue Elk 8/Documents/GalaxyBead'
+ 
